@@ -1,0 +1,11 @@
+<h1>New Task</h1>
+
+<%= form_for(@task, url: create_task_path) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.submit %> <!--This displays "create task" in the html because rails is smart enough-->
+<% end %>
+
+<%= link_to "Back to list", index_task_path %>

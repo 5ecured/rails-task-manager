@@ -1,0 +1,11 @@
+<h1>Edit task</h1>
+
+<%= form_for(@task, url: update_task_path(@task)) do |f| %> <!--you gotta put @task in the parameter cause your updating ONE task-->
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to "Back to list", index_task_path %>

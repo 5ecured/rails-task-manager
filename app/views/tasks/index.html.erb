@@ -1,0 +1,15 @@
+<h1>my tasks :D</h1>
+
+  <% @tasks.each do |task| %>
+    <input type="checkbox" name="task1">
+    <%= link_to task.title, show_task_path(task) %>
+    <%= link_to raw('<i class="far fa-trash-alt"></i>'), destroy_task_path(task), method: :delete, data: { confirm: "Delete #{task.title}?" } %>
+    <br>
+  <% end %>
+
+<p><%= link_to "Add a new task!", new_task_path %></p>
+
+<!--
+line 5: if i go task_path only, it will take me to all tasks path. so i have to give an argument of task
+line 6: you have to specify the method. also the raw is to output without escaping a string
+-->

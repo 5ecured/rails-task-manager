@@ -14,3 +14,30 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   const allTrashIcons = document.querySelectorAll(".delete-task")
+
+//   allTrashIcons.forEach((icon) => {
+//     console.log(icon);
+
+//     icon.addEventListener('click', (event) => {
+//       // console.log(event);
+//       ev
+//       ent.preventDefault();
+
+//       if (confirm('are you sure')) {
+
+//       }
+//     })
+//   })
+// })
+// // console.log(s)
+// // select.addEventListener("click", (event) => {
+// //   event.alert("Are you sure you want to delete?")
+// //   if (event === "yes") {
+// //     destroy_task_path
+// //   } else {
+// //     return null
+// //   }
+// // })
